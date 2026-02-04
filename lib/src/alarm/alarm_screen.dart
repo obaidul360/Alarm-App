@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import '../location/current_location.dart';
 import '../model/alarm_model/alarm_model.dart';
 import 'widgets/alarm_card.dart';
 
@@ -47,7 +48,27 @@ class _AlarmScreenState extends State<AlarmScreen> {
       backgroundColor: const Color(0xff0b0f3a),
       appBar: AppBar(
         backgroundColor: const Color(0xff0b0f3a),
-        title: const Text("Selected Location"),
+        title: const Text(
+          "Selected Location",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.w300,
+          ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => CurrentLocatrionScreen()),
+            );
+          },
+          icon: Icon(
+            Icons.arrow_back_ios_new_sharp,
+            size: 28,
+            color: Colors.white,
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple,

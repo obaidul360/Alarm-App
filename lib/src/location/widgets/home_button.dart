@@ -29,7 +29,7 @@ class HomeButtonWidgets extends StatelessWidget {
             border: Border.all(color: Color(0xff5E6097), width: 2),
           ),
           child: Text(
-            "Home",
+            "Set Alarm",
             style: TextStyle(
               fontSize: 25,
               fontWeight: FontWeight.w600,

@@ -148,7 +148,7 @@ Area: ${place.street}
                     spacing: 5,
                     children: [
                       Text(
-                        "Use current location",
+                        "Tap to current location",
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 25,

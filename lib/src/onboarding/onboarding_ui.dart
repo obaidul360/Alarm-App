@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../location/current_location.dart';
+import '../location/ui.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -75,7 +76,14 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           right: 15,
                           child: TextButton(
                             onPressed: () {
-                              print("Skip pressed");
+                              Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                    // CurrentLocatrionScreen(),
+                                    LocationScreen(),
+                                ),
+                              );
                             },
                             child: Text(
                               "Skip",
@@ -162,7 +170,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => CurrentLocatrionScreen(),
+                        //builder: (context) => CurrentLocatrionScreen(),
+                        builder: (context) => LocationScreen(),
                       ),
                     );
                   }
