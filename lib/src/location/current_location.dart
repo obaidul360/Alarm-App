@@ -86,7 +86,7 @@ Area: ${place.street}
         centerTitle: true,
         backgroundColor: Color(0xff1A1760),
         title: Text(
-          "Location",
+          "Current Location",
           style: TextStyle(
             fontWeight: FontWeight.w500,
             fontSize: 28,

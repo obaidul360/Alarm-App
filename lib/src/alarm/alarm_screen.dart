@@ -49,7 +49,7 @@ class _AlarmScreenState extends State<AlarmScreen> {
       appBar: AppBar(
         backgroundColor: const Color(0xff0b0f3a),
         title: const Text(
-          "Selected Location",
+          "Selected Current Location",
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
