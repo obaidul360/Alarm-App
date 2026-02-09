@@ -12,7 +12,31 @@ class _MyTestState extends State<MyTest> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("For test class")),
-      body: Column(children: [Text("tThis is Text")]),
+      body: Column(
+        children: [
+          Text("tThis is Text"),
+          Row(
+            children: [
+              Text(
+                "This is Row 1",
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black,
+                  fontSize: 25,
+                ),
+              ),
+              Text(
+                "This is Row 2",
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black,
+                  fontSize: 25,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
