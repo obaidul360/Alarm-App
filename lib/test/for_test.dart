@@ -10,6 +10,9 @@ class MyTest extends StatefulWidget {
 class _MyTestState extends State<MyTest> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("For test class")));
+    return Scaffold(
+      appBar: AppBar(title: Text("For test class")),
+      body: Column(children: [Text("tThis is Text")]),
+    );
   }
 }
