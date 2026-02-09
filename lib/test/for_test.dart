@@ -35,6 +35,14 @@ class _MyTestState extends State<MyTest> {
               ),
             ],
           ),
+          Text(
+            "This is 3rd Contribution for gitHub",
+            style: TextStyle(
+              fontWeight: FontWeight.w300,
+              fontSize: 25,
+              color: Colors.black,
+            ),
+          ),
         ],
       ),
     );
