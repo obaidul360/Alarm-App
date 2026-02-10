@@ -43,6 +43,14 @@ class _MyTestState extends State<MyTest> {
               color: Colors.black,
             ),
           ),
+          Text(
+            "This for custom text",
+            style: TextStyle(
+              fontWeight: FontWeight.w300,
+              fontSize: 25,
+              color: Colors.black,
+            ),
+          ),
         ],
       ),
     );
