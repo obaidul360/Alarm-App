@@ -51,6 +51,14 @@ class _MyTestState extends State<MyTest> {
               color: Colors.black,
             ),
           ),
+          Text(
+            "Go to home",
+            style: TextStyle(
+              fontWeight: FontWeight.w300,
+              fontSize: 25,
+              color: Colors.black,
+            ),
+          ),
         ],
       ),
     );
